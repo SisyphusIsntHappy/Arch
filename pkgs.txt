@@ -1,4 +1,3 @@
-linux-lts
-linux-firmware
-linux-lts-headers
+linux-lts linux-firmware linux-lts-headers
 btrfs-progs
+libva-intel-driver libvdpau-va-gl vulkan-intel libva-intel-driver libva-utils
