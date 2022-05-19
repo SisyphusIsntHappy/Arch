@@ -1,4 +1,4 @@
 #!/bin/bash
-curl https://pastebin.com/raw/TGVQi1y5 > install.sh 
+curl https://raw.githubusercontent.com/SisyphusIsntHappy/Arch/main/install.sh > install.sh 
 sed -i -e 's/\r$//' /mnt/install.sh 
 chmod +x install.sh
