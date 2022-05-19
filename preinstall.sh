@@ -7,7 +7,7 @@ pacman -S --noconfirm archlinux-keyring #update keyrings to latest to prevent pa
 pacman -S --noconfirm --needed pacman-contrib terminus-font
 setfont ter-v22b
 sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
-pacman -S --noconfirm --needed reflector rsync grub
+pacman -S --noconfirm --needed reflector rsync grub git
 cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
 
 echo -ne "
@@ -51,7 +51,8 @@ echo "
 "
 cat /mnt/etc/fstab
 
-curl https://raw.githubusercontent.com/SisyphusIsntHappy/Arch/main/get.sh > /mnt/get.sh 
-sed -i -e 's/\r$//' /mnt/get.sh 
+git clone https://github.com/SisyphusIsntHappy/Arch.git
+cp -rp Arch /mnt/Arch
+sed -i -e 's/\r$//' /mnt/*.sh
 
 arch-chroot /mnt
