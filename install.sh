@@ -52,6 +52,6 @@ echo -ne "
 -------------------------------------------------------------------------
 "
 
-curl https://pastebin.com/raw/7ZHLnCuG > pkgs.txt
+curl https://raw.githubusercontent.com/SisyphusIsntHappy/Arch/main/pkgs.txt > pkgs.txt
 sed -i -e 's/\r$//' pkgs.txt
 pacman -S $(cat pkgs.txt)
