@@ -1,3 +1,4 @@
 linux-lts
 linux-firmware
 linux-lts-headers
+btrfs-progs
