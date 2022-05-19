@@ -53,6 +53,6 @@ cat /mnt/etc/fstab
 
 git clone https://github.com/SisyphusIsntHappy/Arch.git
 cp -rp Arch /mnt/Arch
-sed -i -e 's/\r$//' /mnt/*.sh
+sed -i -e 's/\r$//' /mnt/Arch/*.sh
 
 arch-chroot /mnt
